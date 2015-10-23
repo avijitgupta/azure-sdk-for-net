@@ -56,6 +56,17 @@ namespace Microsoft.Azure.Management.Network.Models
             set { this._loadBalancerInboundNatRules = value; }
         }
         
+        private bool? _primary;
+        
+        /// <summary>
+        /// Optional. Gets or sets whether this is a primary IP Configuration
+        /// </summary>
+        public bool? Primary
+        {
+            get { return this._primary; }
+            set { this._primary = value; }
+        }
+        
         private string _privateIpAddress;
         
         /// <summary>
